@@ -6,13 +6,19 @@
 </head>
 <body>
 <form action="#" th:action="@{/addUser}" th:object="${user}" method="post">
+    Name:<br/>
     <input type="text" th:field="*{name}" placeholder="Input your Name"/><br/>
+    Surname:<br/>
     <input type="text" th:field="*{surname}" placeholder="Input your Surname"/><br/>
+    Age:<br/>
     <input type="number" th:field="*{age}" placeholder="Input your Age"/><br/>
+    Email:<br/>
     <input type="email" th:field="*{email}" placeholder="Input your Email"/><br/>
+    Password:<br/>
     <input type="password" th:field="*{password}" placeholder="Input your Password"/><br/>
     <input type="submit" value="Send"/>
 </form>
+<br/>
 <table border="1">
     <thead>
     <tr>
