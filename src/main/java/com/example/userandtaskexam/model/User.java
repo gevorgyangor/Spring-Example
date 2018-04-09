@@ -1,4 +1,4 @@
-package com.example.advancedblog.model;
+package com.example.userandtaskexam.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -29,6 +29,4 @@ public class User {
     private String email;
     @Column
     private String password;
-    @Column
-    private UserType type;
 }

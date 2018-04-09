@@ -1,8 +1,8 @@
-package com.example.advancedblog.repository;
+package com.example.userandtaskexam.repository;
 
-import com.example.advancedblog.model.User;
+import com.example.userandtaskexam.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
-    User findUserByEmail(String s);
+    User findOneByEmail(String email);
 }
