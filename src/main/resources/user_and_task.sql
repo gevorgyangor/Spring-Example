@@ -2,7 +2,9 @@
 SQLyog Ultimate v12.14 (64 bit)
 MySQL - 5.7.18-log : Database - user_and_task
 *********************************************************************
-*/
+*/
+
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -33,9 +35,12 @@ CREATE TABLE `task` (
 
 /*Data for the table `task` */
 
-insert  into `task`(`id`,`title`,`description`,`startDate`,`user_id`) values 
-(1,'Task1','sdagfdhfjg','2018-04-10',1),
-(2,'Task2','adsfjibdh\r\n','2018-04-10',1),
+insert  into `task`(`id`,`title`,`description`,`startDate`,`user_id`) values 
+
+(1,'Task1','sdagfdhfjg','2018-04-10',1),
+
+(2,'Task2','adsfjibdh\r\n','2018-04-10',1),
+
 (3,'Task3','lafjpdjsfipsjdg','2018-04-10',2);
 
 /*Table structure for table `user` */
@@ -54,8 +59,10 @@ CREATE TABLE `user` (
 
 /*Data for the table `user` */
 
-insert  into `user`(`id`,`name`,`surname`,`age`,`email`,`password`) values 
-(1,'Poxos','Poxosyan',24,'poxos@mail.ru','poxos'),
+insert  into `user`(`id`,`name`,`surname`,`age`,`email`,`password`) values 
+
+(1,'Poxos','Poxosyan',24,'poxos@mail.ru','poxos'),
+
 (2,'Valod','Valodyan',25,'valodyan@mail.ru','valod');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -34,6 +34,7 @@ public class TaskRest {
         return tasks;
     }
 
+
     @GetMapping("/{userId}")
     private List<Task> getTasksByUserId(@PathVariable int userId) {
         List<Task> tasks = taskRepository.findTasksByUser_id(userId);

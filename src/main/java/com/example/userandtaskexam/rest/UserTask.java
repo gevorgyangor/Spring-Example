@@ -25,6 +25,7 @@ public class UserTask {
         return userRepository.findOne(id);
     }
 
+
     @PostMapping
     public ResponseEntity createUser(@RequestBody User user) {
         if (userRepository.findOneByEmail(user.getEmail()) == null) {

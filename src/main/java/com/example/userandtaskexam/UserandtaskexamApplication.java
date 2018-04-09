@@ -8,5 +8,6 @@ public class UserandtaskexamApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserandtaskexamApplication.class, args);
+
 	}
 }
