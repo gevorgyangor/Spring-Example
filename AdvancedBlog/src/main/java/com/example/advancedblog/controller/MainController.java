@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class MainController {
@@ -22,8 +23,8 @@ public class MainController {
         return "signIn";
     }
 
-    @GetMapping(value = "/loginSuccess")
-    public String loginUser(@AuthenticationPrincipal UserDetails userDetails, ModelMap map) {
+    @GetMapping("/loginSuccess")
+    public String loginUser(@AuthenticationPrincipal UserDetails userDetails) {
         User user = ((CurrentUser) userDetails).getUser();
         if (user.getType() == UserType.ADMIN) {
             return "redirect:/admin";

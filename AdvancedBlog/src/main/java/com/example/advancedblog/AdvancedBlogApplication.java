@@ -1,5 +1,10 @@
 package com.example.advancedblog;
 
+import com.example.advancedblog.model.User;
+import com.example.advancedblog.model.UserType;
+import com.example.advancedblog.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -8,6 +13,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
 public class AdvancedBlogApplication {
+
+    @Autowired
+    private UserRepository userRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(AdvancedBlogApplication.class, args);

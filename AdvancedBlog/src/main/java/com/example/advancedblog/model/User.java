@@ -30,5 +30,6 @@ public class User {
     @Column
     private String password;
     @Column
+    @Enumerated(EnumType.STRING)
     private UserType type;
 }
