@@ -1,4 +1,4 @@
-package com.example.advancedblog.model;
+package com.example.userandtaskexam.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,6 +15,7 @@ import javax.persistence.*;
 @Table(name = "user")
 public class User {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column
@@ -29,7 +30,4 @@ public class User {
     private String email;
     @Column
     private String password;
-    @Column
-    @Enumerated(EnumType.STRING)
-    private UserType type;
 }
